@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 
 import com.example.administrator.fragmentsdemo.R;
 
-public class Fragment extends android.support.v4.app.Fragment {
+public class Fragment_0 extends android.support.v4.app.Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
@@ -18,16 +18,16 @@ public class Fragment extends android.support.v4.app.Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public Fragment() {
+    public Fragment_0() {
     }
 
-    public static Fragment newInstance(String param1, String param2) {
-        Fragment fragment = new Fragment();
+    public static Fragment_0 newInstance(String param1, String param2) {
+        Fragment_0 fragment0 = new Fragment_0();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
+        fragment0.setArguments(args);
+        return fragment0;
     }
 
     @Override

@@ -1,5 +1,6 @@
 package com.example.administrator.fragmentsdemo.fragment;
 
+import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +12,7 @@ import com.example.administrator.fragmentsdemo.R;
  * Created by Administrator on 2017/12/12.
  */
 
-public class Fragment_1 extends Fragment{
+public class Fragment_1 extends Fragment {
     public Fragment_1() {
     }
 
