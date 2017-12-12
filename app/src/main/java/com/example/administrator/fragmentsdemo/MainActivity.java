@@ -12,6 +12,7 @@ import com.example.administrator.fragmentsdemo.fragment.Fragment_1;
 public class MainActivity extends AppCompatActivity {
     private Button button_add,button_remove;
     private FragmentManager fragmentManager;
+    private Fragment fragment;
     private FragmentTransaction fragmentTransaction;
 
     @Override
@@ -31,6 +32,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         //_____-----fragment_remove
+        /*button_remove=(Button)findViewById(R.id.btn_remove);
+        button_remove.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fragmentManager=getFragmentManager();
+                fragmentTransaction=fragmentManager.beginTransaction();
+                //Fragment_1 fragment_1=new Fragment_1();
+                fragment=fragmentManager.findFragmentById(R.id.fragment_1);
+                String tag = null;
+                fragmentTransaction.addToBackStack(tag);
+                fragmentTransaction.remove(fragment);
+                fragmentTransaction.commit();
+            }
+        });*/
 
 
 
