@@ -25,21 +25,6 @@ public class MainActivity extends AppCompatActivity {
         initView();
         setListener();
 
-        //_____-----fragment_remove
-        /*button_remove=(Button)findViewById(R.id.btn_remove);
-        button_remove.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                fragmentManager=getFragmentManager();
-                fragmentTransaction=fragmentManager.beginTransaction();
-                //Fragment_1 fragment_1=new Fragment_1();
-                fragment=fragmentManager.findFragmentById(R.id.fragment_1);
-                String tag = null;
-                fragmentTransaction.addToBackStack(tag);
-                fragmentTransaction.remove(fragment);
-                fragmentTransaction.commit();
-            }
-        });*/
     }
 
     private void setListener() {
