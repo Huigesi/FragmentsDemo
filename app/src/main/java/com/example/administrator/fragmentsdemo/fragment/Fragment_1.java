@@ -37,7 +37,7 @@ public class Fragment_1 extends Fragment {
         //return inflater.inflate(R.layout.fragment_1, container, false);
         TextView textView=(TextView)view.findViewById(R.id.tv_1);
         Bundle bundle=getArguments();
-        textView.setText(bundle.getInt("id"));
+        textView.setText(bundle.getInt("id")+"");
         return view;
     }
 

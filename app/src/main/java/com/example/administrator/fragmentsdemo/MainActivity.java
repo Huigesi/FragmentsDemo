@@ -43,10 +43,7 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            //传值
-                Bundle bundle=new Bundle();
-                bundle.putInt("id",101);
-                fragment_1.setArguments(bundle);
+
                 //_____-----fragment_add
                /* Fragment_1 fragment_1=new Fragment_1();
                 fragmentTransaction.add(R.id.right,fragment_1);
@@ -56,6 +53,10 @@ public class MainActivity extends AppCompatActivity {
                 fragmentTransaction.replace(R.id.right,fragment_1,"fragment_1");
                 fragmentTransaction.addToBackStack("fragment_1");//添加到回退栈
                 fragmentTransaction.commit();
+                //传值
+                Bundle bundle=new Bundle();
+                bundle.putInt("id",101);
+                fragment_1.setArguments(bundle);
 
             }
         });

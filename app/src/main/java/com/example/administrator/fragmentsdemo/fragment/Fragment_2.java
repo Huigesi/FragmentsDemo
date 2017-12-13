@@ -34,7 +34,7 @@ public class Fragment_2 extends Fragment {
         //获值
         TextView textView=(TextView)view.findViewById(R.id.tv_2);
         Bundle bundle=getArguments();
-        textView.setText(bundle.getInt("id"));
+        textView.setText(bundle.getInt("id")+"");
         return view;
     }
 
