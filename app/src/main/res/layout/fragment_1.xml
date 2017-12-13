@@ -2,24 +2,29 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/fragment1"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="用户管理"
-        android:textSize="50sp"/>
+        android:textSize="30sp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_fg1"
+        android:ems="7"/>
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text="获取输入框的值" />
+        android:layout_height="wrap_content"
+        android:text="获取Activity的值" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tv_1"
-        android:textSize="50sp"/>
+        android:textSize="30sp"/>
 
 
 </LinearLayout>
