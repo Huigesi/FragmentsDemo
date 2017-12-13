@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,14 +29,17 @@ public class Fragment_1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view=inflater.inflate(R.layout.fragment_1,null);
         Button button=(Button)view.findViewById(R.id.button3);
+        final TextView textView=(TextView)view.findViewById(R.id.tv_1);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(),"用户管理",Toast.LENGTH_SHORT).show();
+                EditText editText=(EditText)getActivity().findViewById(R.id.editText);
+                textView.setText(editText.getText().toString().trim());
+                //Toast.makeText(getActivity(),"用户管理",Toast.LENGTH_SHORT).show();
             }
         });
         //return inflater.inflate(R.layout.fragment_1, container, false);
-        TextView textView=(TextView)view.findViewById(R.id.tv_1);
+
         Bundle bundle=getArguments();
         textView.setText(bundle.getInt("id")+"");
         return view;
