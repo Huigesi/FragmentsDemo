@@ -93,10 +93,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Fragment_5 fragment_5=new Fragment_5();
-                fragmentTransaction=fragmentManager.beginTransaction();
+                fragmentTransaction=fragmentManager.beginTransaction();//每点一次就要实例化一次
                 fragmentTransaction.replace(R.id.right,fragment_5,"fragment_5");
                 fragmentTransaction.addToBackStack("fragment_5");
-                fragmentTransaction.commit();
+                fragmentTransaction.commit();//不然commit的东西会重复
+
             }
         });
 
