@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/et_fg1"
-        android:ems="7"/>
+        android:ems="8"/>
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
