@@ -12,10 +12,6 @@ import android.widget.Toast;
 
 import com.example.administrator.fragmentsdemo.R;
 
-/**
- * Created by Administrator on 2017/12/12.
- */
-
 public class Fragment_1 extends Fragment {
     public Fragment_1() {
     }
