@@ -29,7 +29,6 @@ public class Fragment_4 extends Fragment {
                 Toast.makeText(getActivity(),"文件管理",Toast.LENGTH_SHORT).show();
             }
         });
-        //return inflater.inflate(R.layout.fragment_1, container, false);
         return view;
     }
 
